@@ -10,8 +10,8 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    path:  /srv/nfs/roseaw         #your MiamiID
-    server: 10.48.10.140
+    path:  /srv/nfs/knauwq         #your MiamiID
+    server: 10.48.10.201
   persistentVolumeReclaimPolicy: Retain
 ---
 apiVersion: v1
@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: cithit/roseaw:latest    #your MiamiID
+          image: cithit/knauwq:latest    #your MiamiID
           ports:
             - containerPort: 5000
           volumeMounts:
